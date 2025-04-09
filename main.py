@@ -5,7 +5,12 @@ from fastapi import FastAPI
 #  __________________
 
 
-app = FastAPI()
+app = FastAPI(
+    title="FastApi tutorial",
+    description="All the basics of FastAPI",
+    summary="Not sure what this is???",
+    version="1.0.0s",
+)
 
 
 @app.get("/")
